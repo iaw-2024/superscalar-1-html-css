@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de ingreso de datos</title>
+	<link rel="stylesheet" type="text/css" href="formulario_style.css">
+</head>
+<body>
+	<header>
+		<h1>Catalogo de productos</h1>
+		<h3>2024</h3>
+	</header>
+
+	<fieldset>
+		<legend>Ingresar datos del producto</legend>
+		<form method="post">
+			<label for="producto">Nombre del producto:</label>
+			<input type="text" name="producto" />
+
+			<label for="codigo">Codigo del producto</label>
+			<input type="text" name="codigo" />
+
+			<label for="precio">Precio:</label>
+			<input type="number" name="precio" />
+
+			<label for="categoria">Categoria:</label>
+			<select name="categoria">
+				<option value="">.:: Categoria ::.</option>
+				<option value="hardware">Hardware</option>
+				<option value="electronica">Electronica</option>
+				<option value="perifericos">Periferico</option>
+				<option value="laptops">Laptop</option>
+			</select>
+
+			<input type="submit" value="Crear producto" />
+		</form>
+	</fieldset>
+</body>
+</html>

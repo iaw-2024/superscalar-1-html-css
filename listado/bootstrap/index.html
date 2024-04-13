@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listado con Bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<style type="text/css">
+		@media only screen and (min-width: 860px) {
+			main {
+				width: 800px;
+			}
+		}
+
+		@media only screen and (max-width: 560px) {
+			main {
+				font-size: 0.8rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header class="p-3 text-bg-dark d-flex flex-wrap align-items-center justify-content-around">
+		<h1>Catalogo de productos</h1>
+		<h3>2024</h3>
+	</header>
+
+	<main class="mt-4 mx-auto">
+		<table class="table table-striped table-hover table-responsive" id="tablaProductos">
+			<thead>
+				<tr>
+				<th>Producto</th>
+				<th>Codigo</th>
+				<th>Precio</th>
+				<th>Categoria</th>
+				</tr>
+			</thead>
+			<tr>
+				<td class="Producto">Raspberry Pi 4B</td>
+				<td class="Codigo">VYEG9OHD6X</td>
+				<td class="Precio">$89.000</td>
+				<td class="Categoria">Electronica</td>
+			</tr>
+			<tr>
+				<td class="Producto">GPU NVIDIA A100</td>
+				<td class="Codigo">EOCHIEIUQZ</td>
+				<td class="Precio">$1.890.000</td>
+				<td class="Categoria">Hardware</td>
+			</tr>
+			<tr>
+				<td class="Producto">Arduino Uno</td>
+				<td class="Codigo">F2YWEOY7HN</td>
+				<td class="Precio">$10.499</td>
+				<td class="Categoria">Electronica</td>
+			</tr>
+			<tr>
+				<td class="Producto">Arduino Nano V3</td>
+				<td class="Codigo">LC5V5QNDPK</td>
+				<td class="Precio">$8.990</td>
+				<td class="Categoria">Electronica</td>
+			</tr>
+			<tr>
+				<td class="Producto">GeForce RTX 2060 Super</td>
+				<td class="Codigo">DR5G3EFNHF</td>
+				<td class="Precio">$524.999</td>
+				<td class="Categoria">Hardware</td>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>

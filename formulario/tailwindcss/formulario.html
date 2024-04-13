@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de ingreso de datos - Tailwind</title>
+	<link rel="stylesheet" type="text/css" href="formulario_style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<style type="text/css">
+		body {
+			font-family: "Bahnschrift", serif;
+		}
+	</style>
+	
+</head>
+<body>
+	<header class="bg-black text-white flex items-center justify-around py-3.5 text-4xl font-bold font-sans">
+		<h1>Catalogo de productos</h1>
+		<h3>2024</h3>
+	</header>
+
+	<main class="mt-10 flex items-center justify-center w-full dark:text-white">
+		<fieldset class="border border-black p-2">
+			<legend class="text-2xl">Ingresar datos del producto</legend>
+			<form class="grid grid-cols-2" method="post">
+				<label class="mt-2" for="producto">Nombre del producto:</label>
+				<input class="border border-black mt-2" type="text" name="producto" />
+
+				<label class="mt-2" for="codigo">Codigo del producto</label>
+				<input class="border border-black mt-2" type="text" name="codigo" />
+
+				<label class="mt-2" for="precio">Precio:</label>
+				<input class="border border-black mt-2" type="number" name="precio" />
+
+				<label class="mt-2" for="categoria">Categoria:</label>
+				<select class="mt-2" name="categoria">
+					<option value="">.:: Categoria ::.</option>
+					<option value="hardware">Hardware</option>
+					<option value="electronica">Electronica</option>
+					<option value="perifericos">Periferico</option>
+					<option value="laptops">Laptop</option>
+				</select>
+
+				<input class="border border-black mt-2" type="submit" value="Crear producto" />
+			</form>
+		</fieldset>
+	</main>
+
+</body>
+</html>
