@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listado con Tailwind</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<style type="text/css">
+		body {
+			font-family: "Bahnschrift", serif;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="bg-black text-white flex items-center justify-around py-3.5 text-4xl font-bold font-sans">
+		<h1>Catalogo de productos</h1>
+		<h3>2024</h3>
+	</header>
+
+	<main class="mt-10 flex items-center justify-center w-full dark:text-white">
+		<table class="table table-auto table-responsive border border-black border-4 border-collapse" id="tablaProductos">
+			<thead class="text-left text-xl font-light text-surface">
+				<tr>
+					<th class="p-2">Producto</th>
+					<th class="p-2">Codigo</th>
+					<th class="p-2">Precio</th>
+					<th class="p-2">Categoria</th>
+				</tr>
+			</thead>
+			<tr>
+				<td class="Producto p-2 border border-black">Raspberry Pi 4B</td>
+				<td class="Codigo p-2 border border-black">VYEG9OHD6X</td>
+				<td class="Precio p-2 border border-black">$89.000</td>
+				<td class="Categoria p-2 border border-black">Electronica</td>
+			</tr>
+			<tr>
+				<td class="Producto p-2 border border-black">GPU NVIDIA A100</td>
+				<td class="Codigo p-2 border border-black">EOCHIEIUQZ</td>
+				<td class="Precio p-2 border border-black">$1.890.000</td>
+				<td class="Categoria p-2 border border-black">Hardware</td>
+			</tr>
+			<tr>
+				<td class="Producto p-2 border border-black">Arduino Uno</td>
+				<td class="Codigo p-2 border border-black">F2YWEOY7HN</td>
+				<td class="Precio p-2 border border-black">$10.499</td>
+				<td class="Categoria p-2 border border-black">Electronica</td>
+			</tr>
+			<tr>
+				<td class="Producto p-2 border border-black">Arduino Nano V3</td>
+				<td class="Codigo p-2 border border-black">LC5V5QNDPK</td>
+				<td class="Precio p-2 border border-black">$8.990</td>
+				<td class="Categoria p-2 border border-black">Electronica</td>
+			</tr>
+			<tr>
+				<td class="Producto p-2 border border-black">GeForce RTX 2060 Super</td>
+				<td class="Codigo p-2 border border-black">DR5G3EFNHF</td>
+				<td class="Precio p-2 border border-black">$524.999</td>
+				<td class="Categoria p-2 border border-black">Hardware</td>
+			</tr>
+		</table>
+	</main>
+</body>
+</html>
